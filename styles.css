@@ -1,0 +1,223 @@
+/* Variables para colores (fácil de cambiar) */
+:root {
+    --negro-fondo: #0A0A0E; /* Negro casi absoluto */
+    --blanco-texto: #F0F0F0;
+    --morado-claro: #BB86FC; /* Un morado brillante */
+    --morado-oscuro: #6200EE; /* Morado profundo para detalles */
+    --morado-degradado: linear-gradient(45deg, var(--morado-oscuro), var(--morado-claro));
+    --borde-futurista: 2px solid var(--morado-claro);
+    --sombra-neon: 0 0 10px var(--morado-claro);
+    --fuente-titulo: 'Orbitron', sans-serif;
+    --fuente-cuerpo: 'Montserrat', sans-serif;
+}
+
+/* Reset básico y estilo de fondo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--negro-fondo);
+    color: var(--blanco-texto);
+    font-family: var(--fuente-cuerpo);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Estilos de encabezado y navegación */
+.header {
+    background-color: #121212;
+    padding: 40px 5%;
+    text-align: center;
+    border-bottom: var(--borde-futurista);
+    box-shadow: var(--sombra-neon);
+}
+
+.header h1 {
+    font-family: var(--fuente-titulo);
+    font-size: 3em;
+    color: var(--morado-claro);
+    text-shadow: 0 0 5px var(--morado-claro);
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-weight: 300;
+    color: #AAAAAA;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--blanco-texto);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border: 1px solid var(--morado-claro);
+    color: var(--morado-claro);
+    box-shadow: 0 0 5px var(--morado-claro);
+}
+
+/* Estilos para las secciones de portafolio */
+.proyectos-grid-container {
+    padding: 50px 5%;
+}
+
+.seccion-portafolio {
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: #0A0A0E;
+    border-radius: 10px;
+    border: 1px solid var(--morado-oscuro);
+    box-shadow: 0 0 15px rgba(98, 0, 238, 0.3);
+}
+
+.seccion-portafolio h2 {
+    font-family: var(--fuente-titulo);
+    color: var(--morado-claro);
+    font-size: 2em;
+    border-bottom: 2px dashed #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.seccion-intro {
+    font-size: 1.1em;
+    color: #CCCCCC;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Estilos de las tarjetas de proyecto */
+.proyecto-card {
+    background-color: #1A1A1A;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Estilos para que aparezcan dos en línea */
+    display: inline-block;
+    width: 48%; 
+    margin-right: 1.5%;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-neon);
+    border-color: var(--morado-claro);
+}
+
+.proyecto-card h3 {
+    color: var(--morado-claro);
+    font-family: var(--fuente-titulo);
+    margin-bottom: 15px;
+}
+
+/* Estilo para los botones */
+.btn {
+    display: inline-block;
+    background: var(--morado-degradado);
+    color: var(--blanco-texto);
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para las imágenes */
+.imagen-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #252525;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.imagen-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.8;
+}
+
+/* Sección Sobre Mí */
+.sobre-mi {
+    padding: 50px 5%;
+    background-color: #121212;
+    text-align: center;
+    border-top: 1px dashed #333;
+}
+
+.sobre-mi h2 {
+    color: var(--morado-claro);
+    margin-bottom: 25px;
+    font-family: var(--fuente-titulo);
+}
+
+.perfil-img-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: var(--borde-futurista);
+    overflow: hidden;
+    box-shadow: var(--sombra-neon);
+}
+
+.perfil-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre-mi ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+/* Pie de página */
+.footer {
+    background-color: var(--negro-fondo);
+    color: #888;
+    text-align: center;
+    padding: 20px 5%;
+    border-top: var(--borde-futurista);
+}
+
+.footer a {
+    color: var(--morado-claro);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: var(--blanco-texto);
+}
+
+/* Responsive: Una columna en pantallas pequeñas */
+@media (max-width: 768px) {
+    .seccion-portafolio .proyecto-card {
+        width: 100%;
+        margin-right: 0;
+    }
+}
