@@ -24,42 +24,77 @@
         <section class="detalle-card">
             <h2>⚙️ Información Técnica del Modelado</h2>
             
-            <div class="imagenes-detalle">
-                <img src="Captura de pantalla 2025-10-30 134515.png" alt="Vista en Tinkercad del modelo" class="img-detalle">
-                <img src="WhatsApp Image 2025-10-30 at 10.54.18 PM.jpeg" alt="Vista en corte láser" class="img-detalle">
-                <img src="WhatsApp Image 2025-10-30 at 10.54.18 PM (1).jpeg" alt="Vista del modelo armado" class="img-detalle">
-                <img src="WhatsApp Image 2025-10-30 at 10.54.18 PM (2).jpeg" alt="Vista del modelo armado"class="img-detalle">
-            </div 
-
-            <p>Piezas para el cubo</p>
-            
-            <ul>
-                <li>Software Usado: Tinkercad (ideal para empezar).</li>
-                <li>Dimensiones finales: el cubo armado es de 5x5 cm</li>
-                <li>Propósito: Práctica introductoria al Diseño 3D y uso de herramientas básicas (Tarea de Pensamiento de Ingeniería).</li>
-                
-            </ul>
+    
             <br>
             <br>
             <h3>Proceso y Desarrollo</h3>
-<img src="Captura de pantalla 2025-10-30 134515.png" alt="Vista en Tinkercad del modelo" class="img-detalle">
+<img src="Captura de pantalla 2025-10-30 135004.png" alt="Vista en Easyeda " class="img-detalle">
             <p>
                 <ul>
                 
                <li>1. Diseño Esquemático y Layout (EasyEDA)
 <li>Objetivo del Circuito: Diseñar un circuito astable para generar pulsos que enciendan y apaguen un LED de forma repetitiva.</li>
 <br>
-<li>Componentes Clave: Utilizamos el Temporizador 555 (U2) como corazón del circuito, un transistor NPN (Q1) para amplificar la señal y controlar el LED (LED1), y un potenciómetro (R3) para variar la frecuencia de parpadeo (el tiempo que tarda en encender y apagar).</li>
+<li>Componentes Clave: Utilicé el Temporizador 555 (U2) como corazón del circuito, un transistor NPN (Q1) para amplificar la señal y controlar el LED (LED1), y un potenciómetro (R3) para variar la frecuencia de parpadeo (el tiempo que tarda en encender y apagar).</li>
 <br>
 
-<li>Diseño del Layout: En EasyEDA, trasladé el esquemático a un diseño de placa (Layout). La meta fue lograr un ruteo de pistas limpio y corto, evitando cruces (que se resolvieron mediante el uso de vías o saltos).</li><br>
+<li>Diseño del Layout: En EasyEDA, trasladé el esquemático a un diseño de placa (Layout). Mi meta fue lograr un ruteo de pistas limpio y corto, evitando cruces (que resolví mediante el uso de vías o saltos).</li><br>
 
 <li>Detalle visible en la imagen de las pistas: Opté por trazos anchos para garantizar una buena conductividad y una separación clara entre las pistas durante el grabado.</li>
+                </ul>  </p>
+
+            <img src="WhatsApp Image 2025-10-30 at 11.39.16 PM (1).jpeg" alt="Grabado del PCB" class="img-detalle">
+            <p>
+                <ul>
+                
+               <li>2. Manufactura: Grabado Asistido por Máquina
+<li>Grabado por Impresora (CNC/Plotter): En lugar de usar métodos químicos, realicé el grabado utilizando una impresora de grabado (CNC) que funciona con aire a compresión. Esta herramienta me permitió remover el cobre con gran precisión siguiendo el layout que diseñé.</li>
+<br>
+<li>Proceso: Monté la placa de cobre en la máquina. El cabezal de la impresora, guiado por el archivo de diseño, realizó los cortes finos para separar las pistas. Esto dejó solo los caminos de cobre necesarios para la conducción eléctrica.</li>
+<br>
                 </ul>  </p>
+
+             <img src="WhatsApp Image 2025-10-30 at 11.39.16 PM (1).jpeg" alt="Grabado del PCB" class="img-detalle">
+            <p>
+                <ul>
+                
+               <li>2. Manufactura: Grabado Asistido por Máquina
+<li>Grabado por Impresora (CNC/Plotter): En lugar de usar métodos químicos, realicé el grabado utilizando una impresora de grabado (CNC) que funciona con aire a compresión. Esta herramienta me permitió remover el cobre con gran precisión siguiendo el layout que diseñé.</li>
+<br>
+<li>Proceso: Monté la placa de cobre en la máquina. El cabezal de la impresora, guiado por el archivo de diseño, realizó los cortes finos para separar las pistas. Esto dejó solo los caminos de cobre necesarios para la conducción eléctrica.</li>
+<br>
+                </ul>  </p>
+
+             <img src=" <img src="WhatsApp Image 2025-10-30 at 11.39.16 PM (1).jpeg" alt="Soldadura final" class="img-detalle">
+            <p>
+                <ul>
+                
+               <li>2. Manufactura: Grabado Asistido por Máquina
+<li>Grabado por Impresora (CNC/Plotter): En lugar de usar métodos químicos, realicé el grabado utilizando una impresora de grabado (CNC) que funciona con aire a compresión. Esta herramienta me permitió remover el cobre con gran precisión siguiendo el layout que diseñé.</li>
+<br>
+<li>Proceso: Monté la placa de cobre en la máquina. El cabezal de la impresora, guiado por el archivo de diseño, realizó los cortes finos para separar las pistas. Esto dejó solo los caminos de cobre necesarios para la conducción eléctrica.</li>
+<br>
+                </ul>  </p>" 
+
+            
+            <p>
+                <ul>
+                
+               <li>3.Ensamblaje y Soldadura Final
+<li>Preparación: Después del grabado, perforé los orificios para los pines de los componentes.</li>
+<br>
+<li> Soldadura: Procedí a ensamblar la placa. Monté los componentes críticos como el chip 555 y el transistor (Q1), seguido de las resistencias y el potenciómetro.</li>
+                    
+<br> 
+<li>Resultado: Puse mucha atención en la técnica de soldadura , pero como fue mi primera vez, no salió tan bien. El resultado fue una PCB no funcional, ya que al momento de soldar, por accidente terminé puenteando. 
+Me sirvió de experiencia</li>
+                    
+                </ul>  </p>
+
 
    
             
-            <a href="https://www.tinkercad.com/things/iGNvABfAm9R-cubo" target="_blank" class="btn">🔗 Ver Modelo en Tinkercad</a>
+            
         
         </section>
 
@@ -72,6 +107,7 @@
 </body>
 
 </html>
+
 
 
 
